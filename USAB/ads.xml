@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/images/nacbait2012-main.gif</ImageUrl>
+    <NavigateUrl>http://www.nacbait.com/nacba/richmond12/information.php</NavigateUrl>
+    <AlternateText>2012 NACBAIT Heads to Richmond, BC</AlternateText>
+    <Width>390</Width>
+    <Impressions>40</Impressions>
+    <Keyword>small</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/images/knicks_promo_300x250_jeremylin_majestic.jpg</ImageUrl>
+    <NavigateUrl>http://www.nyknicksstore.com/</NavigateUrl>s
+    <AlternateText>Knicks Promo</AlternateText>
+    <Width>390</Width>
+    <Height>258</Height>
+    <Impressions>20</Impressions>
+    <Keyword>small</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/images/NYK1011_DATEINKNICKSHISTORY_300X250.jpg</ImageUrl>
+    <NavigateUrl>http://www.nba.com/knicks/history/index.html</NavigateUrl>s
+    <AlternateText>Knicks Promo</AlternateText>
+    <Width>390</Width>
+    <Height>258</Height>
+    <Impressions>20</Impressions>
+    <Keyword>small</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/images/155_web_020312_AllstarGame_main.jpg</ImageUrl>
+    <NavigateUrl>http://photostore.nba.com/?sourceid=NBA_290x145</NavigateUrl>
+    <Width>390</Width>
+    <Height>258</Height>
+    <AlternateText>NBA Photo Store</AlternateText>
+    <Impressions>40</Impressions>
+    <Keyword>small</Keyword>
+  </Ad>
+</Advertisements>

@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>USAB Warriors</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <link href="Styles/themes/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <link href="Styles/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="http://code.jquery.com/jquery-1.10.2.js" />
+                <asp:ScriptReference Path="~/Scripts/soical.script.js" />
+                <asp:ScriptReference Path="Scripts/slides.jquery.js" />
+                <asp:ScriptReference Path="http://code.jquery.com/ui/1.10.4/jquery-ui.js" />
+                <asp:ScriptReference Path="Scripts/app.js" />
+            </Scripts>
+        </asp:ScriptManager>
+        <div style="background-color: black; height: 30px;">
+            <div>
+                <ul class="social" id="jquery">
+                    <li class="delicious">
+                        <a href="http://www.delicious.com/"><strong>Delicious</strong></a>
+                    </li>
+                    <li class="digg">
+                        <a href="http://digg.com/"><strong>Digg</strong></a>
+                    </li>
+                    <li class="facebook">
+                        <a href="http://www.facebook.com/"><strong>Facebook</strong></a>
+                    </li>
+                    <li class="flickr">
+                        <a href="http://www.flickr.com/"><strong>Flickr</strong></a>
+                    </li>
+                    <li class="linkedin">
+                        <a href="http://www.linkedin.com/"><strong>LinkedIn</strong></a>
+                    </li>
+                    <li class="reddit">
+                        <a href="http://www.reddit.com/"><strong>Reddit</strong></a>
+                    </li>
+                    <li class="rss">
+                        <a href="http://feeds2.feedburner.com/marcofolio"><strong>RSS</strong></a>
+                    </li>
+                    <li class="twitter">
+                        <a href="http://twitter.com/"><strong>Twitter</strong></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_top_access">
+                <a href="Account/Registration.aspx">Sign Up</a>
+                <a href="Account/Login.aspx">Login</a>
+            </div>
+        </div>
+
+        <div class="content_site">
+
+            <div class="content_header">
+                <div class="content_navbarImage">
+                </div>
+                <div class="content_navbar">
+                    <div id="menucontent">
+                        <ul>
+                            <li><a id="A2" runat="server" href="~/">Home</a></li>
+                            <li><a id="A3" runat="server" href="#">Teams</a>
+                                <ul class="noJS">
+                                    <li><a id="A4" runat="server" href="~/Rosters.aspx?Team=Elite">Elite</a></li>
+                                    <li><a id="A5" runat="server" href="~/Rosters.aspx?Team=Open">Open</a></li>
+                                    <li><a id="A6" runat="server" href="~/Rosters.aspx?Team=U18">U18</a></li>
+                                    <li><a id="A7" runat="server" href="~/Rosters.aspx?Team=Senior">Senior</a></li>
+                                    <li><a id="A8" runat="server" href="~/Rosters.aspx?Team=Senior">Senior</a></li>
+                                </ul>
+                            </li>
+                            <li><a id="A9" runat="server" href="#">Players</a></li>
+                            <li><a id="A10" runat="server" href="#">Schedule</a></li>
+                            <li><a id="A11" runat="server" href="~/Photos.aspx">Photos</a></li>
+                            <li><a id="A12" runat="server" href="#">History</a></li>
+                            <li><a id="A13" runat="server" href="#">About Us</a></li>
+                            <li><a id="A14" runat="server" href="#">Contact Us</a> </li>
+                        </ul>
+                    </div>
+               
+                </div>
+            </div>
+            <div class="clear" />
+            <div class="content_main">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="clear">
+            </div>
+            <div class="content_footer" />
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                App.init();
+                App.GetEPSNNEWS();
+            });
+        </script>
+    </form>
+</body>
+</html>

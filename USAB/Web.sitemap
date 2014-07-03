@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+  <siteMapNode title="Home" url="~/Default.aspx" >
+    <siteMapNode url="~/Teams.aspx" title="Teams">
+      <siteMapNode url="~/Elite.aspx" title="Elite"  />
+      <siteMapNode url="~/Open1.aspx" title="Open"   />
+      <siteMapNode url="~/U18.aspx" title="U18"   />
+      <siteMapNode url="~/U15.aspx" title="U15"   />
+    </siteMapNode>
+    <siteMapNode url="~/Schedule.aspx" title="Schedule"   />
+    <siteMapNode url="~/Photos.aspx" title="Photos"   />
+    <siteMapNode url="~/History.aspx" title="History" />
+    <siteMapNode url="~/Forums.aspx" title="Forums"   />
+    <siteMapNode url="~/About.aspx" title="About"   />
+    
+  </siteMapNode>
+</siteMap>
