@@ -39,71 +39,10 @@ public partial class Rosters : System.Web.UI.Page
 
     private void populateRosterGridView(string team)
     {
-        //const string frstname = "First Name";
-        //const string lstname = "Last Name";
-        //const string position = "Position";
-        //const string height = "Height";
-        //const string weight = " Weight";
-        //const string city = " City";
-        //const string state = "State";
-        //System.Type typestring = typeof(System.String);
 
         Player players = new USAB.BLL.Player();
         IList<PlayerInfo> getplayers = players.getPlayers();
-
         PlayerInfo getplayersbyid = players.getPlayer(1);
-
-        //DataTable dt = new DataTable();
-        //DataColumn column;
-        //DataRow row;
-
-        //column = new DataColumn(frstname, typestring);
-        //dt.Columns.Add(column);
-
-        //column = new DataColumn(lstname, typestring);
-        //dt.Columns.Add(column);
-
-        //column = new DataColumn(position, typestring);
-        //dt.Columns.Add(column);
-
-        //column = new DataColumn(height, typestring);
-        //dt.Columns.Add(column);
-
-        //column = new DataColumn(weight, typestring);
-        //dt.Columns.Add(column);
-
-        //column = new DataColumn(city, typestring);
-        //dt.Columns.Add(column);
-
-        //column = new DataColumn(state, typestring);
-        //dt.Columns.Add(column);
-
-        //foreach (PlayerInfo getply in getplayers)
-        //{
-        //    row = dt.NewRow();
-        //    row[frstname] = getply.firstname;
-        //    row[lstname] = getply.lastname;
-        //    row[position] = getply.position;
-        //    row[weight] = getply.weight;
-        //    row[city] = getply.city;
-        //    row[state] = getply.state;
-        //    dt.Rows.Add(row);
-
-        //}
-
-        //foreach (DataColumn col in dt.Columns)
-        //{
-        //    BoundField bfield = new BoundField();
-
-        //    bfield.DataField = col.ColumnName;
-
-        //    bfield.HeaderText = col.ColumnName;
-
-        //    bfield.SortExpression = col.ColumnName;
-
-        //    GridView1.Columns.Add(bfield);
-        //}
-
         DataTable getDT = players.getAllPlayers();
 
         GridView1.DataSource = getDT;

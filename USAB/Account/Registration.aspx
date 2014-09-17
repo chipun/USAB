@@ -55,21 +55,7 @@
             </div>
 
         </div>
-        <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
-        <!-- Modal -->
-        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="myModalLabel">Email Address already exists</h3>
-            </div>
-            <div class="modal-body">
-                <p>Someone already has that username. Try another?/p>
-            </div>
-            <div class="modal-footer">
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-          
-            </div>
-        </div>
+       
         <asp:ScriptManager ID="ScriptManager1" runat="server">
             <Scripts>
 
@@ -83,8 +69,6 @@
         <script type="text/javascript">
             $(document).ready(function () {
                 App.BootstrapValidator();
-               
-
             });
            
         </script>

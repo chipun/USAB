@@ -295,12 +295,28 @@
         }, 4000);
     };
 
+    var handlerSlideImages = function () {
+        $.ajax({
+            url:"../Images/SlideImages/",
+            success: function(data)
+            {
+                $(data).find("a:contains(.jpg)").each(function (i) {
+                    var filename = this.pathname;
+                    $(".slides_container").append("<div><img src='" + filename + "' width='1077' height='300' alt='' /></div>")
+                })
+
+                handlerSlides();
+            }
+        });
+    }
+
     return {
 
         init: function () {
-            handlerSlides();
+            handlerSlideImages();
             handlerAccordion();
             handlerMenu();
+         
 
         },
 

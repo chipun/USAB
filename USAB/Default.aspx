@@ -8,7 +8,7 @@
         <div id="topcontainer">
             <div id="slides">
                 <div class="slides_container">
-                    <div>
+                  <%--  <div>
                         <img src="Images/MikePanUSABWarriors.jpg" height="300" alt="Slide 1" width="1077" />
                     </div>
                     <div>
@@ -24,7 +24,7 @@
                     <div>
                         <img src="Images/USABwarriorsU18.jpg" width="1077" height="300"
                             alt="Slide 7" />
-                    </div>
+                    </div>--%>
                 </div>
             </div>
             <div id="headlinesNews" style="margin-top: 50px">
@@ -143,17 +143,6 @@
                             </div>
                         </ContentTemplate>
                     </asp:UpdatePanel>
-                </div>
-                <div id="ad">
-                    <%-- <asp:Timer ID="SlideShowTimer" Interval="3000" runat="server" />
-                    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
-                        <ContentTemplate>--%>
-                    <asp:AdRotator ID="adr" runat="server" AdvertisementFile="~/ads.xml" KeywordFilter="small" />
-                    <%-- </ContentTemplate>
-                        <Triggers>
-                            <asp:AsyncPostBackTrigger ControlID="SlideShowTimer" EventName="Tick" />
-                        </Triggers>
-                    </asp:UpdatePanel>--%>
                 </div>
             </div>
         </div>

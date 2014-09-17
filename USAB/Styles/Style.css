@@ -47,6 +47,7 @@ body
     background:url('../Images/contentbkg.jpg') repeat; 
 	box-shadow: 0 3.5px 5px rgba(0,0,0,.1);
     width:1077px;
+    min-height: 1000px;
 }
 
 .clear

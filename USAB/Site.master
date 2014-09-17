@@ -64,27 +64,17 @@
                 <div class="content_navbarImage">
                 </div>
                 <div class="content_navbar">
+                    <div class="navbar navbar-inverse">
+                    </div>
                     <div id="menucontent">
                         <ul>
                             <li><a id="A2" runat="server" href="~/">Home</a></li>
-                            <li><a id="A3" runat="server" href="#">Teams</a>
-                                <ul class="noJS">
-                                    <li><a id="A4" runat="server" href="~/Rosters.aspx?Team=Elite">Elite</a></li>
-                                    <li><a id="A5" runat="server" href="~/Rosters.aspx?Team=Open">Open</a></li>
-                                    <li><a id="A6" runat="server" href="~/Rosters.aspx?Team=U18">U18</a></li>
-                                    <li><a id="A7" runat="server" href="~/Rosters.aspx?Team=Senior">Senior</a></li>
-                                    <li><a id="A8" runat="server" href="~/Rosters.aspx?Team=Senior">Senior</a></li>
-                                </ul>
-                            </li>
-                            <li><a id="A9" runat="server" href="#">Players</a></li>
-                            <li><a id="A10" runat="server" href="#">Schedule</a></li>
+                            <li><a id="A3" runat="server" href="~/Rosters.aspx?Team=Elite">Team</a></li>
                             <li><a id="A11" runat="server" href="~/Photos.aspx">Photos</a></li>
-                            <li><a id="A12" runat="server" href="#">History</a></li>
-                            <li><a id="A13" runat="server" href="#">About Us</a></li>
-                            <li><a id="A14" runat="server" href="#">Contact Us</a> </li>
+
                         </ul>
                     </div>
-               
+
                 </div>
             </div>
             <div class="clear" />
